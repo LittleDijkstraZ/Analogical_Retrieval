@@ -1,0 +1,22 @@
+[
+    {
+        "keyword": "Carelessness",
+        "keyphrase": "Lack of preparation leads to mistakes",
+        "summary": "When a person begins tasks without understanding the requirements, it often results in errors that others must correct."
+    },
+    {
+        "keyword": "Responsibility",
+        "keyphrase": "Individual actions impact others",
+        "summary": "Failing to properly prepare for a task can create additional work and burden for others."
+    },
+    {
+        "keyword": "Diligence",
+        "keyphrase": "Importance of thoroughness in tasks",
+        "summary": "Ensuring that one fully understands a task before starting is crucial to prevent errors and inefficiencies."
+    },
+    {
+        "keyword": "Collaboration",
+        "keyphrase": "The effects of one person's work on a team",
+        "summary": "In a group setting, one person's lack of attention to detail can negatively affect the entire team's productivity."
+    }
+]
