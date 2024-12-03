@@ -164,7 +164,6 @@ Here is the sentence:
 
 if __name__ == '__main__':
 	senteces  = []
-	idx = [291]
 	dataset_sentence = load_dataset('jhu-clsp/AnaloBench', f'T1S1-Subset')['train']
 	data_loader_sentence = DataLoader(dataset=dataset_sentence, batch_size=1, shuffle=False)
 	for sample in data_loader_sentence:
