@@ -1,0 +1,22 @@
+[
+    {
+        "keyword": "Choice",
+        "keyphrase": "Freedom of choice in employment",
+        "summary": "Individuals have the option to leave a situation if it does not meet their needs or capabilities."
+    },
+    {
+        "keyword": "Expectations",
+        "keyphrase": "Meeting expectations in commitments",
+        "summary": "People are expected to fulfill certain requirements in their roles, and failure to do so may lead to separation."
+    },
+    {
+        "keyword": "Autonomy",
+        "keyphrase": "Autonomy in decision-making",
+        "summary": "Individuals have the right to make decisions about their participation based on their personal circumstances."
+    },
+    {
+        "keyword": "Responsibility",
+        "keyphrase": "Responsibility in commitments",
+        "summary": "There is an implied responsibility to meet agreed-upon terms, and inability to do so may necessitate a change."
+    }
+]
