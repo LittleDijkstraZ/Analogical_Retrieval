@@ -1,0 +1,36 @@
+Model,Summarization Technique,S1 Accuracy,S10 Accuracy,Difference
+paraphrase-MiniLM-L12-v2,None,57.4,38.8,18.6
+paraphrase-MiniLM-L12-v2,keyword,61.2,43.5,17.7
+paraphrase-MiniLM-L12-v2,keyphrase,63.2,43.8,19.4
+paraphrase-MiniLM-L12-v2,summary,66.8,53.8,13.0
+paraphrase-MiniLM-L12-v2,query + keyword,62.9,43.5,19.4
+paraphrase-MiniLM-L12-v2,query + keyphrase,62.6,42.9,19.7
+paraphrase-MiniLM-L12-v2,query + summary,63.8,42.4,21.4
+all-MiniLM-L12-v1,None,51.2,40.0,11.2
+all-MiniLM-L12-v1,keyword,60.9,44.1,16.8
+all-MiniLM-L12-v1,keyphrase,67.1,45.9,21.2
+all-MiniLM-L12-v1,summary,65.9,51.2,14.7
+all-MiniLM-L12-v1,query + keyword,62.6,45.6,17.0
+all-MiniLM-L12-v1,query + keyphrase,61.8,45.3,16.5
+all-MiniLM-L12-v1,query + summary,62.4,44.1,18.3
+all-mpnet-base-v2,None,56.2,42.4,13.8
+all-mpnet-base-v2,keyword,62.9,42.6,20.3
+all-mpnet-base-v2,keyphrase,62.4,47.4,15.0
+all-mpnet-base-v2,summary,67.4,53.8,13.6
+all-mpnet-base-v2,query + keyword,59.1,49.7,9.4
+all-mpnet-base-v2,query + keyphrase,58.5,50.6,7.9
+all-mpnet-base-v2,query + summary,66.2,51.2,15.0
+sentence-t5-xl,None,72.6,54.4,18.2
+sentence-t5-xl,keyword,65.6,50.3,15.3
+sentence-t5-xl,keyphrase,71.2,50.3,20.9
+sentence-t5-xl,summary,77.9,56.5,21.4
+sentence-t5-xl,query + keyword,76.2,55.6,20.6
+sentence-t5-xl,query + keyphrase,80.6,53.5,27.1
+sentence-t5-xl,query + summary,78.2,53.2,25.0
+promptriever,None,70.3,59.7,10.6
+promptriever,keyword,56.2,41.2,15.0
+promptriever,keyphrase,68.5,46.8,21.7
+promptriever,summary,75.3,55.0,20.3
+promptriever,query + keyword,71.2,61.2,10.0
+promptriever,query + keyphrase,75.9,60.0,15.9
+promptriever,query + summary,79.1,60.3,18.8

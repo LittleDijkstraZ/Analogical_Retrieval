@@ -1,0 +1,11 @@
+Model,Dataset,Method,Style,Accuracy
+all-mpnet-base-v2,S10,FS_Summary,query + summary,0.43823529411764706
+all-mpnet-base-v2,S10,FS_Summary,summary,0.42058823529411765
+sentence-t5-xl,S10,FS_Summary,query + summary,0.55
+sentence-t5-xl,S10,FS_Summary,summary,0.5147058823529411
+all-MiniLM-L12-v1,S10,FS_Summary,query + summary,0.4411764705882353
+all-MiniLM-L12-v1,S10,FS_Summary,summary,0.46176470588235297
+paraphrase-MiniLM-L12-v2,S10,FS_Summary,query + summary,0.42058823529411765
+paraphrase-MiniLM-L12-v2,S10,FS_Summary,summary,0.40588235294117647
+promptriever,S10,FS_Summary,query + summary,0.5941176470588235
+promptriever,S10,FS_Summary,summary,0.5117647058823529

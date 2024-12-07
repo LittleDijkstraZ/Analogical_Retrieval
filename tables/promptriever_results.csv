@@ -1,0 +1,41 @@
+Dataset,Method,Prompt,samaya-ai/promptriever-llama2-7b-v1
+S1,None,"A relevant document demonstrates a relational analogy to the query, focusing on parallels in context, structure, or reasoning rather than direct semantic overlap. Ensure that the documents adhere to these criteria by avoiding those that diverge into tangential or overly literal interpretations. Additionally, exclude passages from [specific field/domain] unless they offer clear analogical insights.",0.49117647058823527
+S1,None,A relevant document would be the least  analogous to the query.,0.5794117647058824
+S1,None,A relevant document would be the least semantically similary to the query. I care about analogical similarity.,0.5882352941176471
+S1,None,A relevant document would be the most analogous to the query. A relevant document would be the most analogous to the query. I don't care about semantic similarity. I don't care about semantic similarity. ,0.7029411764705882
+S1,None,A relevant document would be the most analogous to the query. I don't care about semantic similarity.,0.6794117647058824
+S1,None,A relevant document would be the most analogous to the query. I don't care about semantic similarity.A relevant document would be the most analogous to the query. I don't care about semantic similarity.,0.7029411764705882
+S1,None,A relevant document would be the most semantically similary to the query. I don't care about analogical similarity.,0.6529411764705882
+S1,None,"Focus on high-level concepts, abstraction, and key ideas.",0.5441176470588235
+S1,None,Merry Christmas.,0.6470588235294118
+S1,None,No Prompt,0.6558823529411765
+S1,query + summary,"A relevant document demonstrates a relational analogy to the query, focusing on parallels in context, structure, or reasoning rather than direct semantic overlap. Ensure that the documents adhere to these criteria by avoiding those that diverge into tangential or overly literal interpretations. Additionally, exclude passages from [specific field/domain] unless they offer clear analogical insights.",0.7205882352941176
+S1,query + summary,A relevant document would be the least  analogous to the query.,0.7823529411764706
+S1,query + summary,A relevant document would be the least semantically similary to the query. I care about analogical similarity.,0.7705882352941177
+S1,query + summary,A relevant document would be the most analogous to the query. A relevant document would be the most analogous to the query. I don't care about semantic similarity. I don't care about semantic similarity. ,0.7911764705882353
+S1,query + summary,A relevant document would be the most analogous to the query. I don't care about semantic similarity.,0.7823529411764706
+S1,query + summary,A relevant document would be the most analogous to the query. I don't care about semantic similarity.A relevant document would be the most analogous to the query. I don't care about semantic similarity.,0.7911764705882353
+S1,query + summary,A relevant document would be the most semantically similary to the query. I don't care about analogical similarity.,0.788235294117647
+S1,query + summary,"Focus on high-level concepts, abstraction, and key ideas.",0.7735294117647059
+S1,query + summary,Merry Christmas.,0.7823529411764706
+S1,query + summary,No Prompt,0.7764705882352941
+S10,None,"A relevant document demonstrates a relational analogy to the query, focusing on parallels in context, structure, or reasoning rather than direct semantic overlap. Ensure that the documents adhere to these criteria by avoiding those that diverge into tangential or overly literal interpretations. Additionally, exclude passages from [specific field/domain] unless they offer clear analogical insights.",0.5264705882352941
+S10,None,A relevant document would be the least  analogous to the query.,0.5294117647058824
+S10,None,A relevant document would be the least semantically similary to the query. I care about analogical similarity.,0.5235294117647059
+S10,None,A relevant document would be the most analogous to the query. A relevant document would be the most analogous to the query. I don't care about semantic similarity. I don't care about semantic similarity. ,0.5970588235294118
+S10,None,A relevant document would be the most analogous to the query. I don't care about semantic similarity.,0.5911764705882353
+S10,None,A relevant document would be the most analogous to the query. I don't care about semantic similarity.A relevant document would be the most analogous to the query. I don't care about semantic similarity.,0.6
+S10,None,A relevant document would be the most semantically similary to the query. I don't care about analogical similarity.,0.5794117647058824
+S10,None,"Focus on high-level concepts, abstraction, and key ideas.",0.5558823529411765
+S10,None,Merry Christmas.,0.5735294117647058
+S10,None,No Prompt,0.5676470588235294
+S10,query + summary,"A relevant document demonstrates a relational analogy to the query, focusing on parallels in context, structure, or reasoning rather than direct semantic overlap. Ensure that the documents adhere to these criteria by avoiding those that diverge into tangential or overly literal interpretations. Additionally, exclude passages from [specific field/domain] unless they offer clear analogical insights.",0.5235294117647059
+S10,query + summary,A relevant document would be the least  analogous to the query.,0.5794117647058824
+S10,query + summary,A relevant document would be the least semantically similary to the query. I care about analogical similarity.,0.5794117647058824
+S10,query + summary,A relevant document would be the most analogous to the query. A relevant document would be the most analogous to the query. I don't care about semantic similarity. I don't care about semantic similarity. ,0.6029411764705882
+S10,query + summary,A relevant document would be the most analogous to the query. I don't care about semantic similarity.,0.5823529411764706
+S10,query + summary,A relevant document would be the most analogous to the query. I don't care about semantic similarity.A relevant document would be the most analogous to the query. I don't care about semantic similarity.,0.5970588235294118
+S10,query + summary,A relevant document would be the most semantically similary to the query. I don't care about analogical similarity.,0.5911764705882353
+S10,query + summary,"Focus on high-level concepts, abstraction, and key ideas.",0.5852941176470589
+S10,query + summary,Merry Christmas.,0.5823529411764706
+S10,query + summary,No Prompt,0.5970588235294118

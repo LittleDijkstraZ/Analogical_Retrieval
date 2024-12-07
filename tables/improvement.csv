@@ -1,0 +1,71 @@
+,Model,Dataset,Summarization Technique,Improvement
+28,paraphrase-MiniLM-L12-v2,S1,None,0.0
+29,paraphrase-MiniLM-L12-v2,S1,keyword,3.8
+30,paraphrase-MiniLM-L12-v2,S1,keyphrase,5.8
+31,paraphrase-MiniLM-L12-v2,S1,summary,9.4
+32,paraphrase-MiniLM-L12-v2,S1,query + keyword,5.5
+33,paraphrase-MiniLM-L12-v2,S1,query + keyphrase,5.2
+34,paraphrase-MiniLM-L12-v2,S1,query + summary,6.4
+35,paraphrase-MiniLM-L12-v2,S10,None,0.0
+36,paraphrase-MiniLM-L12-v2,S10,keyword,4.7
+37,paraphrase-MiniLM-L12-v2,S10,keyphrase,5.0
+38,paraphrase-MiniLM-L12-v2,S10,summary,15.0
+39,paraphrase-MiniLM-L12-v2,S10,query + keyword,4.7
+40,paraphrase-MiniLM-L12-v2,S10,query + keyphrase,4.1
+41,paraphrase-MiniLM-L12-v2,S10,query + summary,3.6
+0,all-MiniLM-L12-v1,S1,None,0.0
+1,all-MiniLM-L12-v1,S1,keyword,9.7
+2,all-MiniLM-L12-v1,S1,keyphrase,15.9
+3,all-MiniLM-L12-v1,S1,summary,14.7
+4,all-MiniLM-L12-v1,S1,query + keyword,11.4
+5,all-MiniLM-L12-v1,S1,query + keyphrase,10.6
+6,all-MiniLM-L12-v1,S1,query + summary,11.2
+7,all-MiniLM-L12-v1,S10,None,0.0
+8,all-MiniLM-L12-v1,S10,keyword,4.1
+9,all-MiniLM-L12-v1,S10,keyphrase,5.9
+10,all-MiniLM-L12-v1,S10,summary,11.2
+11,all-MiniLM-L12-v1,S10,query + keyword,5.6
+12,all-MiniLM-L12-v1,S10,query + keyphrase,5.3
+13,all-MiniLM-L12-v1,S10,query + summary,4.1
+14,all-mpnet-base-v2,S1,None,0.0
+15,all-mpnet-base-v2,S1,keyword,6.7
+16,all-mpnet-base-v2,S1,keyphrase,6.2
+17,all-mpnet-base-v2,S1,summary,11.2
+18,all-mpnet-base-v2,S1,query + keyword,2.9
+19,all-mpnet-base-v2,S1,query + keyphrase,2.3
+20,all-mpnet-base-v2,S1,query + summary,10.0
+21,all-mpnet-base-v2,S10,None,0.0
+22,all-mpnet-base-v2,S10,keyword,0.2
+23,all-mpnet-base-v2,S10,keyphrase,5.0
+24,all-mpnet-base-v2,S10,summary,11.4
+25,all-mpnet-base-v2,S10,query + keyword,7.3
+26,all-mpnet-base-v2,S10,query + keyphrase,8.2
+27,all-mpnet-base-v2,S10,query + summary,8.8
+56,sentence-t5-xl,S1,None,0.0
+57,sentence-t5-xl,S1,keyword,-7.0
+58,sentence-t5-xl,S1,keyphrase,-1.4
+59,sentence-t5-xl,S1,summary,5.3
+60,sentence-t5-xl,S1,query + keyword,3.6
+61,sentence-t5-xl,S1,query + keyphrase,8.0
+62,sentence-t5-xl,S1,query + summary,5.6
+63,sentence-t5-xl,S10,None,0.0
+64,sentence-t5-xl,S10,keyword,-4.1
+65,sentence-t5-xl,S10,keyphrase,-4.1
+66,sentence-t5-xl,S10,summary,2.1
+67,sentence-t5-xl,S10,query + keyword,1.2
+68,sentence-t5-xl,S10,query + keyphrase,-0.9
+69,sentence-t5-xl,S10,query + summary,-1.2
+42,promptriever,S1,None,0.0
+43,promptriever,S1,keyword,-14.1
+44,promptriever,S1,keyphrase,-1.8
+45,promptriever,S1,summary,5.0
+46,promptriever,S1,query + keyword,0.9
+47,promptriever,S1,query + keyphrase,5.6
+48,promptriever,S1,query + summary,8.8
+49,promptriever,S10,None,0.0
+50,promptriever,S10,keyword,-18.5
+51,promptriever,S10,keyphrase,-12.9
+52,promptriever,S10,summary,-4.7
+53,promptriever,S10,query + keyword,1.5
+54,promptriever,S10,query + keyphrase,0.3
+55,promptriever,S10,query + summary,0.6

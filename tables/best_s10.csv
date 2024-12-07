@@ -1,0 +1,6 @@
+,Model,Dataset,None Accuracy,Best Technique,Best Technique Accuracy,Improvement
+2,paraphrase-MiniLM-L12-v2,S10,38.8,summary,53.8,15.0
+0,all-MiniLM-L12-v1,S10,40.0,summary,51.2,11.200000000000003
+1,all-mpnet-base-v2,S10,42.4,summary,53.8,11.399999999999999
+4,sentence-t5-xl,S10,54.4,summary,56.5,2.1000000000000014
+3,promptriever,S10,59.7,query + keyword,61.2,1.5

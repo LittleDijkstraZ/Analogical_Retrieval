@@ -1,0 +1,61 @@
+Model,Dataset,Summarization Technique,Improvement from None
+paraphrase-MiniLM-L12-v2,S1,summary,9.4
+paraphrase-MiniLM-L12-v2,S1,query + summary,6.4
+paraphrase-MiniLM-L12-v2,S1,keyphrase,5.8
+paraphrase-MiniLM-L12-v2,S1,query + keyword,5.5
+paraphrase-MiniLM-L12-v2,S1,query + keyphrase,5.2
+paraphrase-MiniLM-L12-v2,S1,keyword,3.8
+paraphrase-MiniLM-L12-v2,S10,summary,15.0
+paraphrase-MiniLM-L12-v2,S10,keyphrase,5.0
+paraphrase-MiniLM-L12-v2,S10,keyword,4.7
+paraphrase-MiniLM-L12-v2,S10,query + keyword,4.7
+paraphrase-MiniLM-L12-v2,S10,query + keyphrase,4.1
+paraphrase-MiniLM-L12-v2,S10,query + summary,3.6
+all-MiniLM-L12-v1,S1,keyphrase,15.9
+all-MiniLM-L12-v1,S1,summary,14.7
+all-MiniLM-L12-v1,S1,query + keyword,11.4
+all-MiniLM-L12-v1,S1,query + summary,11.2
+all-MiniLM-L12-v1,S1,query + keyphrase,10.6
+all-MiniLM-L12-v1,S1,keyword,9.7
+all-MiniLM-L12-v1,S10,summary,11.2
+all-MiniLM-L12-v1,S10,keyphrase,5.9
+all-MiniLM-L12-v1,S10,query + keyword,5.6
+all-MiniLM-L12-v1,S10,query + keyphrase,5.3
+all-MiniLM-L12-v1,S10,keyword,4.1
+all-MiniLM-L12-v1,S10,query + summary,4.1
+all-mpnet-base-v2,S1,summary,11.2
+all-mpnet-base-v2,S1,query + summary,10.0
+all-mpnet-base-v2,S1,keyword,6.7
+all-mpnet-base-v2,S1,keyphrase,6.2
+all-mpnet-base-v2,S1,query + keyword,2.9
+all-mpnet-base-v2,S1,query + keyphrase,2.3
+all-mpnet-base-v2,S10,summary,11.4
+all-mpnet-base-v2,S10,query + summary,8.8
+all-mpnet-base-v2,S10,query + keyphrase,8.2
+all-mpnet-base-v2,S10,query + keyword,7.3
+all-mpnet-base-v2,S10,keyphrase,5.0
+all-mpnet-base-v2,S10,keyword,0.2
+sentence-t5-xl,S1,query + keyphrase,8.0
+sentence-t5-xl,S1,query + summary,5.6
+sentence-t5-xl,S1,summary,5.3
+sentence-t5-xl,S1,query + keyword,3.6
+sentence-t5-xl,S1,keyphrase,-1.4
+sentence-t5-xl,S1,keyword,-7.0
+sentence-t5-xl,S10,summary,2.1
+sentence-t5-xl,S10,query + keyword,1.2
+sentence-t5-xl,S10,query + keyphrase,-0.9
+sentence-t5-xl,S10,query + summary,-1.2
+sentence-t5-xl,S10,keyphrase,-4.1
+sentence-t5-xl,S10,keyword,-4.1
+promptriever,S1,query + summary,8.8
+promptriever,S1,query + keyphrase,5.6
+promptriever,S1,summary,5.0
+promptriever,S1,query + keyword,0.9
+promptriever,S1,keyphrase,-1.8
+promptriever,S1,keyword,-14.1
+promptriever,S10,query + keyword,1.5
+promptriever,S10,query + summary,0.6
+promptriever,S10,query + keyphrase,0.3
+promptriever,S10,summary,-4.7
+promptriever,S10,keyphrase,-12.9
+promptriever,S10,keyword,-18.5
