@@ -103,9 +103,11 @@ def predict_labels_FollowIR(quesitons, options, model, tokenizer, bs=32):
     return predicted_labels
 
 
-def predict_labels_Promptriever(questions, options, model, bs=4, questions_indices=None, options_indices=None):
+def predict_labels_Promptriever(questions, options, model, bs=4, questions_indices=None, options_indices=None, instruction=None):
 
-    instruction = "" 
+
+
+    # instruction = "" 
     # 6471, 5912 (6293, 2423, 3299)
     # instruction = ""    
     # 5647 -> 5971 kw, 6176 kp, 5971 ks
@@ -219,6 +221,9 @@ def predict_labels_Promptriever(questions, options, model, bs=4, questions_indic
     # instruction = "A relevant document should also be the most analogous to the query."
     # 6735, 5559
 
+    if instruction is None:
+        instruction = ""
+        
     input_text_list = [
         f"query: {query.strip()} {instruction.strip()}".strip() for query in questions
         # f"Instruction: {instruction.strip()} Query: {query.strip()}".strip() for query in questions # worse

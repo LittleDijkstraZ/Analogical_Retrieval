@@ -45,6 +45,21 @@ class Promptriever:
     def __init__(self, model_name_or_path):
         self.model, self.tokenizer = self.get_model(model_name_or_path)
         self.model.eval().cuda()
+        self.instruction_list = [
+            "",
+            "Merry Christmas.",
+
+            "A relevant document would be the most analogous to the query. I don't care about semantic similarity.",
+            "A relevant document would be the most analogous to the query. I don't care about semantic similarity. " * 2,
+            "A relevant document would be the most analogous to the query. " * 2 + "I don't care about semantic similarity. " * 2,
+            "A relevant document demonstrates a relational analogy to the query, focusing on parallels in context, structure, or reasoning rather than direct semantic overlap. Ensure that the documents adhere to these criteria by avoiding those that diverge into tangential or overly literal interpretations. Additionally, exclude passages from [specific field/domain] unless they offer clear analogical insights.",
+            "Focus on high-level concepts, abstraction, and key ideas.",
+
+
+            "A relevant document would be the most semantically similary to the query. I don't care about analogical similarity.",
+            "A relevant document would be the least semantically similary to the query. I care about analogical similarity.",
+            "A relevant document would be the least analogous to the query.",
+        ]
 
     def get_model(self, peft_model_name):
         # Load the PEFT configuration to get the base model name
