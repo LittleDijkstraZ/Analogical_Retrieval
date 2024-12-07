@@ -1,5 +1,6 @@
 from utils.data import preprocess_data, universal_idx, query_expansion
 import numpy as np
+import pickle
 
 def evaluate_ranking(dataset, pred_func, summary_level="keyword", query_only=False, summary_only=False):
 
@@ -13,7 +14,17 @@ def evaluate_ranking(dataset, pred_func, summary_level="keyword", query_only=Fal
     unique_options_to_idx = {option: idx for idx, option in enumerate(unique_options)}
     options_indices = [unique_options_to_idx[option] for option in options]
 
-    if summary_level is not None and (not query_only):
+    if summary_level == 'Dense':
+        stories_sentence = None
+        with open('stories_sentence.pkl', 'rb') as pkl_file:
+            stories_sentence = pickle.load(pkl_file)
+            stories_sentence = {k.strip():v for k,v in stories_sentence.items()}
+        for oidx, option in enumerate(unique_options):
+            if summary_only:
+                unique_options[oidx] = f"{stories_sentence[option]}"
+            else:
+                unique_options[oidx] = f"{option} summary: {stories_sentence[option]}"
+    elif summary_level is not None and (not query_only):
        unique_options = query_expansion(unique_options, dataset, summary_level, sentence2idx, story2idx, sentence_summary, story_summary, summary_only=summary_only)
     
     print(len(questions))
@@ -22,7 +33,19 @@ def evaluate_ranking(dataset, pred_func, summary_level="keyword", query_only=Fal
     unique_questions_to_idx = {question: idx for idx, question in enumerate(unique_questions)}
     questions_indices = [unique_questions_to_idx[question] for question in questions]
 
-    if summary_level is not None:
+
+    if summary_level == 'Dense':
+        stories_sentence = None
+        with open('stories_sentence.pkl', 'rb') as pkl_file:
+            stories_sentence = pickle.load(pkl_file)
+            stories_sentence = {k.strip():v for k,v in stories_sentence.items()}
+        for qidx, question in enumerate(unique_questions):           
+            if summary_only:
+                unique_questions[qidx] = f"{stories_sentence[question]}"
+            else:
+                unique_questions[qidx] = f"{question} summary: {stories_sentence[question]}"
+
+    elif summary_level is not None:
         unique_questions = query_expansion(unique_questions, dataset, summary_level, sentence2idx, story2idx, sentence_summary, story_summary, summary_only=summary_only)
 
     predicted_labels, similarities = pred_func(unique_questions, unique_options, questions_indices=questions_indices, options_indices=options_indices)
