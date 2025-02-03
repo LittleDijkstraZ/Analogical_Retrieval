@@ -2,7 +2,7 @@
 # model_name = 'paraphrase-MiniLM-L12-v2'
 
 # model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
-
+from tqdm.auto import tqdm
 import numpy as np
 import torch
 
@@ -20,9 +20,16 @@ def preprocess_options(options_str):
 
 
 
-def predict_labels(questions, options, model, bs=256, questions_indices=None, options_indices=None):
+def predict_labels(questions, 
+                   options, 
+                   model, 
+                   bs=256, 
+                   questions_indices=None, 
+                   options_indices=None):
     question_embeddings = model.encode(questions, show_progress_bar=True, batch_size=bs, convert_to_tensor=True)
     question_embeddings = question_embeddings.reshape(len(questions), -1)
+    
+    
     # question_embeddings = np.repeat(question_embeddings, 4, axis=0)
     if options_indices is None:
         question_embeddings = torch.repeat_interleave(question_embeddings, 4, dim=0)
