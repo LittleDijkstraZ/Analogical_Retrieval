@@ -19,15 +19,23 @@ def preprocess_options(options_str):
     return final_options
 
 
-
+from torchdr import PCA
 def predict_labels(questions, 
                    options, 
                    model, 
                    bs=256, 
-                   questions_indices=None, 
+                   questions_indices=None,
+                   apply_reduction = False, 
                    options_indices=None):
+
     question_embeddings = model.encode(questions, show_progress_bar=True, batch_size=bs, convert_to_tensor=True)
     question_embeddings = question_embeddings.reshape(len(questions), -1)
+
+    if apply_reduction:
+        reduction_dim = question_embeddings.shape[-1] *9 //10
+        PCA_model = PCA(n_components=reduction_dim)
+        PCA_model.fit(question_embeddings)
+        question_embeddings = PCA_model.transform(question_embeddings)
     
     
     # question_embeddings = np.repeat(question_embeddings, 4, axis=0)
@@ -35,7 +43,8 @@ def predict_labels(questions,
         question_embeddings = torch.repeat_interleave(question_embeddings, 4, dim=0)
     option_embeddings = model.encode(options, show_progress_bar=True, batch_size=bs, convert_to_tensor=True)
     print(question_embeddings.shape, option_embeddings.shape)
-
+    if apply_reduction:
+        option_embeddings = PCA_model.transform(option_embeddings)
 
     if options_indices is None:
         similarities = []
